@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h1>CAPTCHA Verification</h1>
+        <form id="captcha-form" onsubmit="return validateCaptcha()">
+            <div class="captcha-box">
+                <p id="captcha-text"></p>
+                <button type="button" class="re-btn" onclick="generateCaptcha()">Reload</button>
+            </div>
+            <input type="text" id="captcha-input" placeholder="Enter CAPTCHA" required>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+            <p id="captcha-message"></p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
